@@ -1,0 +1,82 @@
+.brand {
+    position: relative;
+    height: 100vh;
+    background: url('../assets/brand/backBrand.png') no-repeat center center ;
+    background-size: cover;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.5);
+        z-index: 2;
+    }
+    &__content {
+        position: absolute;
+        left: 35%;
+        top: 35%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        z-index: 3;
+        &-first {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #EAE9E8;
+            margin-bottom: 25px;
+
+        }
+        &-title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #EAE9E8;
+            letter-spacing: 0.9px;
+            margin-bottom: 35px;
+        }
+        &-last {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.045em;
+            text-transform: uppercase;
+            color: #EAE9E8;
+        }
+    }
+    &__nav {
+        display: flex;
+        justify-content: center;
+        column-gap: 50px;
+        margin-top: 280px;
+        cursor: pointer;
+        &-item {
+            font-family: 'Tajawal';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #EAE9E8;
+            opacity: 0.3;
+            &:hover {
+                opacity: 1;
+                transition: 0.1s;
+            }
+        }
+    }
+}
